@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="example_css.css">
+
+     <title>Documentation</title>
+</head>
+<body style="background-color: bisque;">
+     <div class="topnav">
+          <a class="inactive" href="/">Home</a>
+          <a class="inactive" href="/example">Examples</a>
+          <a class="active" href="/document">Documentation</a>
+     </div>
+
+     <h1>Documentations</h1>
+
+     <h3>Get Started</h3>
+     <p>First, needs to include the library js file: design.js and a html2canvas js file.</p>
+     <P>Could download html2canvas from here: https://html2canvas.hertzen.com/</p>
+     <p>The sticker and map containers are all in a div element. So when use it,please append to other element, like other div. The appened element is return from the function freeMap. It has three parameters: free, rows, cols, d.</p>
+     <p>If you want to free map, then enter true for first parameter. Rows and cols could be any value. For a grided map, the first parameter is false, and you could put values for row and colums. d is for the degree of map rotating.</p>
+     <p>To create stickers, there three category: tree, building, and road. Each category has two types. First, create the generator for each category. And you can call the 'make' functions to create the number of stickers you want.<p>
+
+     <br>
+     <br>
+     <h3>APIs</h3>
+     <h4>Global functions</h4>
+     <ul>freeMap(free, rows, cols, d)
+          <li>function name: freeMap</li>
+          <li>parameter: free, rows, cols, d</li>
+          <li>return: a div element contains sticker and map containers</li>
+     </ul>
+     <p>This function return a div that have containers for sticker and map. So in this function it will call the function to create stickers and map according to the parameter. The first parameter indicates that you want a free map or not. True is free map. False is a grid map. d is the degree of rotating for map. Users could costumize the map type and the map size for grid map. And also the rotate degree for both types of map.</p>
+     <ul>TreeGenerator()
+          <li>function name: TreeGenerator</li>
+          <li>parameter: none</li>
+          <li>return: none</li>
+     </ul>
+     <p>This is the constructor for trees. It create a instance of tree generator, and initialize it.</p>
+     <ul>makeTreeOne(num,d)
+          <li>function name: makeTreeOne</li>
+          <li>parameter: num,d</li>
+          <li>return: none</li>
+     </ul>
+     <p>This is the sticker tree one making function. The parameter num indicates the number of tree one appears in the sticker container. d is the degree the sticker could rotated. User could costumize the number of stickers, and the rotate degree.</p>
+     <ul>makeTreeTwo(num,d)
+          <li>function name: makeTreeTwo</li>
+          <li>parameter: num,d</li>
+          <li>return: none</li>
+     </ul>
+     <p>This is the sticker tree two making function. The parameter num indicates the number of tree two appears in the sticker container. d is the degree the sticker could rotated. User could costumize the number of stickers, and the rotate degree.</p>
+     <ul>makeHouse(num,d)
+          <li>function name: makeHouse</li>
+          <li>parameter: num,d</li>
+          <li>return: none</li>
+     </ul>
+     <p>This is the sticker house making function. The parameter num indicates the number of house appears in the sticker container. d is the degree the sticker could rotated. User could costumize the number of stickers, and the rotate degree.</p>
+     <ul>makeCondo(num,d)
+          <li>function name: makeCondo</li>
+          <li>parameter: num,d</li>
+          <li>return: none</li>
+     </ul>
+     <p>This is the sticker condo making function. The parameter num indicates the number of condos appears in the sticker container. d is the degree the sticker could rotated. User could costumize the number of stickers, and the rotate degree.</p>
+     <ul>makeHorizontal(num,d)
+          <li>function name: makeHorizontal</li>
+          <li>parameter: num,d</li>
+          <li>return: none</li>
+     </ul>
+     <p>This is the sticker horizontal road making function. The parameter num indicates the number of horizontal appears in the sticker container. d is the degree the sticker could rotated. User could costumize the number of stickers, and the rotate degree.</p>
+     <ul>makeVertical(num,d)
+          <li>function name: makeVertical</li>
+          <li>parameter: num,d</li>
+          <li>return: none</li>
+     </ul>
+     <p>This is the sticker vertical road making function. The parameter num indicates the number of vertical road appears in the sticker container. d is the degree the sticker could rotated. User could costumize the number of stickers, and the rotate degree.</p>
+</body>
+</html>

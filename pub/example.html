@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="example_css.css">
+
+     <title>Design</title>
+     <!-- JQuery -->
+     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+     <script defer src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- html2canvas -->
+     <script defer type="text/javascript" src="html2canvas.js"></script>
+     <!-- library -->
+     <script defer type="text/javascript" src='design.js'></script>
+     <!-- Then we load a script that depends on our libraries -->
+     <script defer type="text/javascript" src='example.js'></script>
+</head>
+<body style="background-color: bisque;">
+     <div class="topnav">
+          <a class="inactive" href="/">Home</a>
+          <a class="active" href="/example">Examples</a>
+          <a class="inactive" href="/document">Documentation</a>
+     </div>
+
+     <h1>Examples</h1>
+     <h3>Make a draft desgin with free map!</h3>
+     <div class="example1" style="width: 1000px;height: 780px;"></div>
+     <pre><code style="padding:12px;display: block;border: solid 1px; font-size: x-large;
+     color: black;font-weight: bolder;">
+          Code:
+          ex1.append(freeMap(true,0,0,90))
+
+          const tg = new TreeGenerator()
+          tg.makeTreeOne(6,20)
+          tg.makeTreeTwo(3,30)
+
+          const bg = new BuildingGenerator()
+          bg.makeHouse(4,15)
+          bg.makeCondo(3,20)
+
+          const road = new RoadGenerator()
+          road.makeHorizontal(4,90)
+          road.makeVertical(3,45)
+     </code></pre>
+     <h3>Make a draft desgin with grided map!</h3>
+     <div class="example2" style="width: 1000px;height: 780px;"></div>
+     <pre><code style="padding:12px;display: block;border: solid 1px; font-size: x-large;
+     color: black;font-weight: bolder;">
+          Code:
+          ex2.append(freeMap(false,7,3,15))
+
+          const tg1 = new TreeGenerator()
+          tg1.makeTreeOne(6,20)
+          tg1.makeTreeTwo(3,30)
+
+          const bg1 = new BuildingGenerator()
+          bg1.makeHouse(4,15)
+          bg1.makeCondo(3,20)
+
+          const road1 = new RoadGenerator()
+          road1.makeHorizontal(4,90)
+          road1.makeVertical(3,45)
+     </code></pre>
+</body>
+</html>
